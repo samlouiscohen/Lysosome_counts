@@ -1,0 +1,34 @@
+Objective:
+
+1) Store all lysosome data in array from all images? (Markers for end of each image)
+2)ratio of area between pink and blue (full image and dextrin) from the cleaned
+3)Count lysosomes per cell - This may be much harder
+	-May have to use an average if images are as poorly defined
+	
+
+Completed:
+
+1) Read in images from multiple folders
+
+
+2) Clean images for information collection
+
+	a) Full-Cell clean
+	b) Lysosomes clean 
+	c) Dextrin clean
+	d) (X) Cell Mask (X)        (May be impossible to fully clean)
+
+
+
+
+3) Find pink area and dextrin area by individual components and get ratio (~66.2%)
+
+4)Count objects within object - Algorithm works but Cell mask isn’t defined
+
+
+
+To Do:
+
+1)Ensure that multiple images can be read with no damage to speed
+2)Clean the cell mask
+3)
