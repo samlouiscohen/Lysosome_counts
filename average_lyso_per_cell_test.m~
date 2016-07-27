@@ -1,0 +1,36 @@
+%Grab the count of lysosomes
+
+img = imread("")
+
+
+image_folder_dir = ['testImgs/sample' num2str(1)];
+image_files = dir([image_folder_dir '/*.jpg']); %Should convert to png
+lysosome_filename = [image_folder_dir '/' image_files(2).name];
+lysosome_img = imread(lysosome_filename);
+lysosome_clean = clean_lyso(lysosome_img);
+[lyso_data, lyso_values, lyso_num] = collect_data(lysosome_clean, 'hi');
+
+
+%Grab a single cell size (If possible, otherwise use a hardcoded value)
+single_cell_size = 11463; %From "testPics/sample2/4.jpg"
+
+%Calculate the area of the cellmask- trickiest part
+
+    %Maybe count darker spots as overlaps so double area on these?
+    %Area is calculated by multiplying local intensity by percieved area
+    
+    
+    
+    
+   pink_area = sum(cat(1,pink_data.Area)); 
+   
+   
+    
+    
+    
+    
+    
+    
+%Divide calculated area by lysosome count
+
+%Return answer for the given frame
